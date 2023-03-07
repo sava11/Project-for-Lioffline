@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://RandPointInPolygon.tscn" type="PackedScene" id=1]
+[ext_resource path="res://new scene.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RandPointInPolygon" parent="." instance=ExtResource( 1 )]
+position = Vector2( 48, 32 )
+polygon = PoolVector2Array( -8, -8, 40, 208, 352, 192, 728, 64 )
+time_range_between_item_spawn = Vector2( 0.6, 1.5 )
+item_deletion_time = 0.0
+spawn_scene = ExtResource( 2 )
